@@ -15,10 +15,6 @@ def get_db_connection():
         database=DB_NAME,
         port=DB_PORT
     )
-print("✅ Koneksi ke database berhasil!")
-    conn.close()
-except Exception as e:
-    print("❌ Gagal koneksi ke database:", str(e))
 
 # Route untuk menampilkan halaman utama
 @app.route('/')
